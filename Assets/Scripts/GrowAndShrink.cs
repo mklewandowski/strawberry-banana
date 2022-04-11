@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrowAndShrink : MonoBehaviour
 {
-    public enum JuicyState {
+    enum JuicyState {
         Normal,
         Grow,
         Shrink,
@@ -12,13 +12,14 @@ public class GrowAndShrink : MonoBehaviour
     JuicyState state = JuicyState.Normal;
 
     [SerializeField]
-    public float GrowTo = 1.1f;
+    float GrowTo = 1.1f;
     [SerializeField]
     float ShrinkTo = 1f;
     [SerializeField]
     float Rate = 7f;
     [SerializeField]
     float JuiceTime = 3f;
+
     float timer;
 
     void Start ()

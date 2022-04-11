@@ -28,7 +28,8 @@ public class SceneManager : MonoBehaviour
     GameObject HUDTopScore;
     [SerializeField]
     GameObject HUDScore;
-
+    [SerializeField]
+    GameObject HUDCredits;
 
     [SerializeField]
     GameObject Canvas;
@@ -41,7 +42,7 @@ public class SceneManager : MonoBehaviour
     List<GameObject> fruitButtonsList = new List<GameObject>();
 
     float gameOverTimer = 0f;
-    float gameOverTimerMax = 3f;
+    float gameOverTimerMax = 2f;
 
     // game scroll speed
     Vector2 initialScrollSpeed = new Vector2(0, 300f);
@@ -73,6 +74,11 @@ public class SceneManager : MonoBehaviour
                 fruitButtonsList.Add(button);
             }
         }
+
+        HUDTitle.GetComponent<MoveNormal>().MoveDown();
+        HUDHowToPlay.GetComponent<MoveNormal>().MoveRight();
+        HUDStart.GetComponent<MoveNormal>().MoveLeft();
+        HUDCredits.GetComponent<MoveNormal>().MoveRight();
     }
 
     // Update is called once per frame
@@ -158,7 +164,7 @@ public class SceneManager : MonoBehaviour
         gameOverTimer -= Time.deltaTime;
         if (gameOverTimer <= 0)
         {
-            HUDStart.SetActive(true);
+            HUDStart.GetComponent<MoveNormal>().MoveLeft();
             Globals.CurrentGameState = Globals.GameState.Restart;
         }
     }
@@ -172,10 +178,11 @@ public class SceneManager : MonoBehaviour
     {
         audioSource.PlayOneShot(BlipSound, 1f);
 
-        HUDGameOver.SetActive(false);
+        HUDGameOver.transform.localPosition = new Vector3(0, 2000f, 0);
         HUDTitle.SetActive(false);
         HUDHowToPlay.SetActive(false);
-        HUDStart.SetActive(false);
+        HUDCredits.SetActive(false);
+        HUDStart.transform.localPosition = new Vector3(2000f, -300f, 0);
         HUDScore.SetActive(true);
 
         for (int r = 0; r < Rows; r++)
@@ -220,7 +227,7 @@ public class SceneManager : MonoBehaviour
 
         HUDFinalScore.GetComponent<TextMeshProUGUI>().text = "YOUR SCORE: " + Globals.CurrentScore.ToString();
         HUDTopScore.GetComponent<TextMeshProUGUI>().text = "BEST SCORE: " + Globals.BestScore.ToString();
-        HUDGameOver.SetActive(true);
+        HUDGameOver.GetComponent<MoveNormal>().MoveDown();
         gameOverTimer = gameOverTimerMax;
         Globals.CurrentGameState = Globals.GameState.Dead;
     }
