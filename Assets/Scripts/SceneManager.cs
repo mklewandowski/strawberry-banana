@@ -51,7 +51,6 @@ public class SceneManager : MonoBehaviour
     // moving direction
     Vector2 scrollDirection = new Vector2(0, -1f);
 
-    // Start is called before the first frame update
     void Awake()
     {
         Application.targetFrameRate = 60;
@@ -123,11 +122,6 @@ public class SceneManager : MonoBehaviour
         }
     }
 
-    void UpdateTitleScreenState()
-    {
-
-    }
-
     void UpdatePlaying()
     {
         float minY = -128f;
@@ -167,11 +161,6 @@ public class SceneManager : MonoBehaviour
             HUDStart.GetComponent<MoveNormal>().MoveLeft();
             Globals.CurrentGameState = Globals.GameState.Restart;
         }
-    }
-
-    void UpdateRestart()
-    {
-
     }
 
     public void StartReadyMode()
