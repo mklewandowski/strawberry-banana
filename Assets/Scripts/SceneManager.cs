@@ -83,21 +83,13 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Globals.CurrentGameState == Globals.GameState.TitleScreen)
-        {
-            UpdateTitleScreenState();
-        }
-        else if (Globals.CurrentGameState == Globals.GameState.Playing)
+        if (Globals.CurrentGameState == Globals.GameState.Playing)
         {
             UpdatePlaying();
         }
         else if (Globals.CurrentGameState == Globals.GameState.Dead)
         {
             UpdateDead();
-        }
-        else if (Globals.CurrentGameState == Globals.GameState.Restart)
-        {
-            UpdateRestart();
         }
     }
 
