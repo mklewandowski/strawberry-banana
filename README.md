@@ -4,6 +4,8 @@ Strawberry Banana is a fast-paced tapping game based on Hu Wen Zeng's popular Pi
 ## Gameplay
 Strawberry Banana is a remix of the popular mobile game Piano Tiles. Tiles containing either bananas or strawberries scroll downward from the top of the screen. Tap all the strawberry tiles and avoid all of the banana tiles. As the game progresses, the tile scroll speed increases. 
 
+![Strawberry Banana gameplay](https://github.com/mklewandowski/strawberry-banana/blob/main/Assets/Images/strawberry-banana-gameplay.gif?raw=true)
+
 ## Supported Platforms
 Strawberry Banana is designed for use on multiple platforms including:
 - iOS
@@ -14,11 +16,11 @@ Strawberry Banana is designed for use on multiple platforms including:
 ## Running locally
 Use the following steps to run locally:
 1. Clone this repo
-2. Open repo folder using Unity 2020.3.10f.1
+2. Open repo folder using Unity 2021.3.0f.1
 3. Install Text Mesh Pro
 
 ## Development Tools
-- Created using Unity 2020.3.10f.1
+- Created using Unity 2021.3.0f.1
 - Code edited using Visual Studio Code
 - Sounds created using [Bfxr](https://www.bfxr.net/)
 - Audio edited using [Audacity](https://www.audacityteam.org/)
