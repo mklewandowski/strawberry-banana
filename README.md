@@ -1,8 +1,8 @@
 # Strawberry Banana
-Strawberry Banana is a fast-paced tapping game based on Hu Wen Zeng's popular Piano Tiles (AKA Don't Tap the White Tile). I've long adored the simplicity and elegance of Piano Tiles, and I've wanted to make a version of it for ages. After more than half a decade, I finally got around to it during the pandemic. Grab the strawberries, pass on the bananas, and rack up the points.
+Strawberry Banana is a fast-paced tapping game based on Hu Wen Zeng's popular [Piano Tiles](https://en.wikipedia.org/wiki/Piano_Tiles) (AKA Don't Tap the White Tile). I've long adored the simplicity and elegance of Piano Tiles, and I've wanted to make a version of it for ages. After more than half a decade, I finally got around to it during the pandemic. Grab the strawberries, pass on the bananas, and rack up the points.
 
 ## Gameplay
-Strawberry Banana is a remix of the popular mobile game Piano Tiles. Tiles containing either bananas or strawberries scroll downward from the top of the screen. Tap all the strawberry tiles and avoid all of the banana tiles. As the game progresses, the tile scroll speed increases. 
+Strawberry Banana is a remix of the popular mobile game Piano Tiles. Rows of tiles containing either bananas or strawberries scroll downward from the top of the screen. Tap all the strawberry tiles and avoid all of the banana tiles. As the game progresses, the tile scroll speed increases. 
 
 ![Strawberry Banana gameplay](https://github.com/mklewandowski/strawberry-banana/blob/main/Assets/Images/strawberry-banana-gameplay.gif?raw=true)
 
@@ -13,7 +13,7 @@ Strawberry Banana is designed for use on multiple platforms including:
 - Web
 - Mac and PC standalone builds
 
-## Running locally
+## Running Locally
 Use the following steps to run locally:
 1. Clone this repo
 2. Open repo folder using Unity 2021.3.0f.1
@@ -27,4 +27,4 @@ Use the following steps to run locally:
 - Found images edited and new images created using [Paint.NET](https://www.getpaint.net/)
 
 ## Credits
-Initial fruit pixel art based on [Free Pixel Food](https://assetstore.unity.com/packages/2d/environments/free-pixel-food-113523) from the Unity Asset Store.
+Fruit pixel art based on [Free Pixel Food](https://assetstore.unity.com/packages/2d/environments/free-pixel-food-113523) from the Unity Asset Store.
